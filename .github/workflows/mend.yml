@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.9']
+        python-version: ['3.10']
 
     steps:
     - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        cd DeepSeek-V3/inference
+        cd /home/runner/DeepSeek-V3/inference
         python -m pip install --upgrade pip
         pip install virtualenv --user
         pip install -r requirements.txt
