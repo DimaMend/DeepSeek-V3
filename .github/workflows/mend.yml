@@ -18,6 +18,7 @@ jobs:
     
     - name: Install dependencies
       run: |
+        pwd
         cd /home/runner/DeepSeek-V3/inference
         python -m pip install --upgrade pip
         pip install virtualenv --user
